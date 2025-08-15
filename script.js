@@ -24,7 +24,7 @@ fetchBtn.addEventListener('click', async() => {
             <h2 class="cityName">${data.name}, ${data.sys.country}</h2>
             <p>Temperature: ${data.main.temp}°C</p>
             <p>Humidity: ${data.main.humidity}%</p>
-            <p>Weather Condition: ${data.weather[0].description}.</p>
+            <p class="condition">Weather Condition: ${data.weather[0].description}.</p>
         `;
     } catch (err) {
         document.querySelector('.result').innerHTML = err.message;
